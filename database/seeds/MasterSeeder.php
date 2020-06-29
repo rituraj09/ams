@@ -67,7 +67,8 @@ class MasterSeeder extends Seeder
             array('subject_code'=>'Bot', 'name'=>'Botany', 'course_id'=>'1'),  
             array('subject_code'=>'Zool', 'name'=>'Zology', 'course_id'=>'1'),     
             array('subject_code'=>'Geog', 'name'=>'Geography', 'course_id'=>'1'),     
-            array('subject_code'=>'Statics', 'name'=>'Statics', 'course_id'=>'1'),   
+            array('subject_code'=>'Statics', 'name'=>'Statics', 'course_id'=>'1'),    
+            array('subject_code'=>'Reg', 'name'=>'Regular', 'course_id'=>'1'),    
 
             array('subject_code'=>'Edu', 'name'=>'Educatiom', 'course_id'=>'2'),    
             array('subject_code'=>'Eco', 'name'=>'Economics', 'course_id'=>'2'),    
@@ -77,12 +78,11 @@ class MasterSeeder extends Seeder
             array('subject_code'=>'Ass', 'name'=>'Assamese', 'course_id'=>'2'),     
             array('subject_code'=>'Hin', 'name'=>'Hindi', 'course_id'=>'2'),     
             array('subject_code'=>'His', 'name'=>'History', 'course_id'=>'2'),    
-            array('subject_code'=>'H. Sc', 'name'=>'Home Science', 'course_id'=>'2'),    
+            array('subject_code'=>'H. Sc', 'name'=>'Home Science', 'course_id'=>'2'),         
+            array('subject_code'=>'Reg', 'name'=>'Regular', 'course_id'=>'1'),    
 
-            array('subject_code'=>'Acc', 'name'=>'Accountancy', 'course_id'=>'3'),    
-            array('subject_code'=>'Eco', 'name'=>'Economics', 'course_id'=>'3'),    
-            array('subject_code'=>'BM', 'name'=>'Bussiness Management', 'course_id'=>'3'),             
-            array('subject_code'=>'CA', 'name'=>'Chartered Accountancy', 'course_id'=>'3'),    
+            array('subject_code'=>'Hns', 'name'=>'Honours', 'course_id'=>'3'),     
+            array('subject_code'=>'Reg', 'name'=>'Regular', 'course_id'=>'3'),     
         ));
     }
 }
