@@ -36,6 +36,7 @@ return [
     */
 
     'guards' => [
+      
          
 
         'student' => [
@@ -73,6 +74,7 @@ return [
     */
 
     'providers' => [
+        
          
 
         'students' => [
@@ -107,6 +109,8 @@ return [
     */
 
     'passwords' => [
+      
+
        
 
         'students' => [
