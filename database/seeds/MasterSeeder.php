@@ -79,7 +79,7 @@ class MasterSeeder extends Seeder
             array('subject_code'=>'Hin', 'name'=>'Hindi', 'course_id'=>'2'),     
             array('subject_code'=>'His', 'name'=>'History', 'course_id'=>'2'),    
             array('subject_code'=>'H. Sc', 'name'=>'Home Science', 'course_id'=>'2'),         
-            array('subject_code'=>'Reg', 'name'=>'Regular', 'course_id'=>'1'),    
+            array('subject_code'=>'Reg', 'name'=>'Regular', 'course_id'=>'2'),    
 
             array('subject_code'=>'Hns', 'name'=>'Honours', 'course_id'=>'3'),     
             array('subject_code'=>'Reg', 'name'=>'Regular', 'course_id'=>'3'),     
