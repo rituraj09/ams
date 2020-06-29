@@ -36,10 +36,7 @@ return [
     */
 
     'guards' => [
-        'official' => [
-            'driver' => 'session',
-            'provider' => 'officials',
-        ],
+         
 
         'student' => [
             'driver' => 'session',
@@ -76,10 +73,7 @@ return [
     */
 
     'providers' => [
-        'officials' => [
-            'driver' => 'eloquent',
-            'model' => App\Official::class,
-        ],
+         
 
         'students' => [
             'driver' => 'eloquent',
@@ -113,11 +107,7 @@ return [
     */
 
     'passwords' => [
-        'officials' => [
-            'provider' => 'officials',
-            'table' => 'official_password_resets',
-            'expire' => 60,
-        ],
+       
 
         'students' => [
             'provider' => 'students',
