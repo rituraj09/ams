@@ -59,5 +59,30 @@ class MasterSeeder extends Seeder
             array('abbr'=>'B.Com', 'name'=>'Bachelore of commerce (Honours)', 'total_term'=>'3'),  
             array('abbr'=>'B.C.A', 'name'=>'Bachelore of Computer Applications', 'total_term'=>'3'),    
         ));
+
+        DB::table('major_master')->insert(array(
+            array('subject_code'=>'Phys', 'name'=>'Physics', 'course_id'=>'1'),    
+            array('subject_code'=>'Math', 'name'=>'Mathematics', 'course_id'=>'1'),   
+            array('subject_code'=>'Chem', 'name'=>'Chemistry', 'course_id'=>'1'),  
+            array('subject_code'=>'Bot', 'name'=>'Botany', 'course_id'=>'1'),  
+            array('subject_code'=>'Zool', 'name'=>'Zology', 'course_id'=>'1'),     
+            array('subject_code'=>'Geog', 'name'=>'Geography', 'course_id'=>'1'),     
+            array('subject_code'=>'Statics', 'name'=>'Statics', 'course_id'=>'1'),   
+
+            array('subject_code'=>'Edu', 'name'=>'Educatiom', 'course_id'=>'2'),    
+            array('subject_code'=>'Eco', 'name'=>'Economics', 'course_id'=>'2'),    
+            array('subject_code'=>'Eng', 'name'=>'English', 'course_id'=>'2'),   
+            array('subject_code'=>'P. Sc', 'name'=>'Political Science', 'course_id'=>'2'),  
+            array('subject_code'=>'Soc', 'name'=>'Sociology', 'course_id'=>'2'),  
+            array('subject_code'=>'Ass', 'name'=>'Assamese', 'course_id'=>'2'),     
+            array('subject_code'=>'Hin', 'name'=>'Hindi', 'course_id'=>'2'),     
+            array('subject_code'=>'His', 'name'=>'History', 'course_id'=>'2'),    
+            array('subject_code'=>'H. Sc', 'name'=>'Home Science', 'course_id'=>'2'),    
+
+            array('subject_code'=>'Acc', 'name'=>'Accountancy', 'course_id'=>'3'),    
+            array('subject_code'=>'Eco', 'name'=>'Economics', 'course_id'=>'3'),    
+            array('subject_code'=>'BM', 'name'=>'Bussiness Management', 'course_id'=>'3'),             
+            array('subject_code'=>'CA', 'name'=>'Chartered Accountancy', 'course_id'=>'3'),    
+        ));
     }
 }
