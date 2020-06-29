@@ -27,11 +27,16 @@ class CreateStudentsTable extends Migration
             $table->timestamp('mobile_verified_at')->nullable();
 
             $table->string('password',200)->nullable();  
-            $table->date('dob')->nullable();
-            $table->integer('gender')->nullable();  //FK
+
             $table->string('fathers_name',200)->nullable();  
             $table->string('mothers_name',200)->nullable();  
+            $table->date('dob')->nullable();
+            $table->integer('gender')->nullable();  //FK
             $table->integer('caste')->nullable();  //FK
+            $table->integer('is_minority')->nullable(); 
+            $table->integer('religion')->nullable(); 
+            $table->integer('is_pwd')->nullable();  
+            $table->string('aadhar',30)->nullable();   
             $table->string('permanent_address',200)->nullable();
             $table->string('permanent_post_office',100)->nullable();
             $table->string('permanent_police_station',100)->nullable();
