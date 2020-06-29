@@ -15,7 +15,7 @@ class CreateMajorMaster extends Migration
     {
         Schema::create('major_master', function (Blueprint $table) {
             $table->increments('id'); 
-            $table->string('course_id',40); 
+            $table->string('subject_code',40); 
             $table->string('name',100); 
             $table->integer('course_id'); 
             $table->boolean('is_delete')->default(0); 
