@@ -14,8 +14,15 @@ class CreateSessionMaster extends Migration
     public function up()
     {
         Schema::create('session_master', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->increments('id'); 
+            $table->string('name',20); 
+            $table->integer('academic_term_id', false, true); 
+            $table->integer('academic_course_id', false, true);  
+            $table->integer('academic_major_id', false, true); 
+            $table->integer('total_seats'); 
+            $table->integer('year'); 
+            $table->boolean('is_delete')->default(0); 
+            $table->boolean('is_active')->default(1); 
         });
     }
 

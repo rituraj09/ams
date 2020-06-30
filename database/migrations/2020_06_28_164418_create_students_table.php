@@ -53,10 +53,12 @@ class CreateStudentsTable extends Migration
             $table->integer('local_district')->nullable(); //FK  
             $table->string('local_phone',15)->nullable();
             $table->string('local_email',50)->nullable();
-            $table->string('photo_path',200)->nullable();   
-            $table->integer('status')->default(0); 
+            $table->string('photo_path',200)->nullable();  
+
+            $table->integer('first_login')->default(1);  
             $table->boolean('is_active')->default(0);            
-            $table->boolean('is_delete')->default(0);         
+            $table->boolean('is_delete')->default(0);   
+            
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
        
         });

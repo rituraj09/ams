@@ -14,8 +14,11 @@ class CreateMajorMaster extends Migration
     public function up()
     {
         Schema::create('major_master', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->increments('id'); 
+            $table->string('name',100); 
+            $table->integer('course_id'); 
+            $table->boolean('is_delete')->default(0); 
+            $table->boolean('is_active')->default(1); 
         });
     }
 

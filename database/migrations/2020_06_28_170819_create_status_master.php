@@ -15,6 +15,7 @@ class CreateStatusMaster extends Migration
     {
         Schema::create('status_master', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('code',6);
             $table->string('name',200);
             $table->boolean('is_delete')->default(0); 
             $table->boolean('is_active')->default(1); 

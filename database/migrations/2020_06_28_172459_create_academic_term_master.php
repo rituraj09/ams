@@ -14,8 +14,11 @@ class CreateAcademicTermMaster extends Migration
     public function up()
     {
         Schema::create('academic_term_master', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->increments('id'); 
+            $table->string('name',100); 
+            $table->integer('total_month'); 
+            $table->boolean('is_delete')->default(0); 
+            $table->boolean('is_active')->default(1); 
         });
     }
 

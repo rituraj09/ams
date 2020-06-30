@@ -14,8 +14,12 @@ class CreateCourseMaster extends Migration
     public function up()
     {
         Schema::create('course_master', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->increments('id'); 
+            $table->string('abbr',12); 
+            $table->string('name',300); 
+            $table->integer('total_term');  
+            $table->boolean('is_delete')->default(0); 
+            $table->boolean('is_active')->default(1); 
         });
     }
 
