@@ -14,11 +14,11 @@ class CreateEmployeesTable extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
+            $table->string('name',50);
+            $table->string('phone',12);
+            $table->string('email',30);
             $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
+            $table->rememberToken(); 
         });
     }
 
